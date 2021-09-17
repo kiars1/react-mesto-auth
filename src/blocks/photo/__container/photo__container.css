@@ -1,0 +1,9 @@
+.photo__container {
+  background-color: #FFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1fr min-content;
+  max-width: 282px;
+}

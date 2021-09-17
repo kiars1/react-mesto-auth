@@ -1,0 +1,26 @@
+.photo__list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-column-gap: 17px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  .photo__list {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .photo__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+

@@ -1,0 +1,23 @@
+.register {
+    max-width: 880px;
+    margin: auto;
+    padding-top: 60px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .register {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 670px) {
+    .register {
+      padding-top: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 340px) {
+    .register {
+      max-width: 282px;
+    }
+  }

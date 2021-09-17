@@ -1,0 +1,29 @@
+.popup__button-save_disable {
+  color: rgba(84,84,84,.7);
+  background-color: #fff;
+  border: 1px solid rgba(84,84,84,.7);
+  border-radius: 2px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  width: 358px;
+  height: 50px;
+  margin-top: 18px;
+  padding: 0;
+  cursor: unset;
+}
+
+@media screen and (max-width: 670px) {
+  .popup__button-save_disable {
+    margin-top: 15px;
+    max-width: 47vw;
+    font-size: 14px;
+    height: 46px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .popup__button-save_disable {
+    max-width: 238px;
+  }
+}

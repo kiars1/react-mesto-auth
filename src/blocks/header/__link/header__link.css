@@ -1,0 +1,28 @@
+.header__link {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 45px 0px 41px 0px;
+    margin: 0;
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+@media screen and (max-width: 670px) {
+    .header__link {
+      padding: 28px 0px 0px 0px;
+      font-size: 14px;
+    }
+
+    .header__link:nth-child(2) {
+      padding: 28px 0px 10px 0px;
+      font-size: 14px;
+    }
+  }
+
+  .header__link:hover:nth-child(2) {
+    opacity: 60%;
+    transition: opacity 1s;
+  }

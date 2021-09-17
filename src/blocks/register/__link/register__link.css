@@ -1,0 +1,16 @@
+.register__link {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 15px auto auto auto;
+    max-width: 358px;
+    text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+    .register__link {
+        min-width: 260px;
+        margin: 20px auto auto auto;
+    }
+}
