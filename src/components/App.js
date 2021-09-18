@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect, useHistory } from 'react-router-dom';
 import Header from './Header';
 import Main from './Main'
+import Footer from './Footer'
 import EditProfilePopup from './EditProfilePopup.js'
 import EditAvatarPopup from './EditAvatarPopup.js'
 import ImagePopup from './ImagePopup.js'
@@ -284,8 +285,10 @@ function App() {
               ? <Redirect to="/" />
               : <Redirect to="/sign-in" />}
           </Route>
-
         </Switch>
+
+        <Footer />
+
         <EditProfilePopup
           isOpen={isHandleEditProfileClick}
           onClose={closeAllPopups}
