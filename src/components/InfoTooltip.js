@@ -1,8 +1,8 @@
 import React from 'react';
 
 //1 картинка - удачное подключение 2 - ошибка
-import Confirm from '../images/Confirm.svg';
-import Dismiss from '../images/Dismiss.svg';
+import confirm from '../images/Confirm.svg';
+import dismiss from '../images/Dismiss.svg';
 
 function InfoTooltip(props) {
   const {
@@ -19,7 +19,7 @@ function InfoTooltip(props) {
           className="popup__button-close"
           type="button"
           aria-label="Закрыть"></button>
-        <img className='popup__union' src={isSuccess ? Confirm : Dismiss }  alt={isSuccess ? Dismiss : Confirm} />
+        <img className='popup__union' src={isSuccess ? confirm : dismiss }  alt={isSuccess ? confirm : dismiss} />
         <p className="popup__text">
         {isSuccess ? 'Вы успешно зарегистрировались!' : 'Что-то пошло не так! Попробуйте ещё раз.'}
           

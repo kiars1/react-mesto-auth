@@ -29,7 +29,7 @@ function App() {
   const [cards, setCards] = React.useState([]);
 
   const [isSuccess, setIsSuccess] = React.useState(false);
-  const [isInfoTooltipOpen, setisInfoTooltipOpen] = React.useState(false);
+  const [isInfoTooltipOpen, setIsInfoTooltipOpen] = React.useState(false);
 
   const [userEmail, setUserEmail] = React.useState("");
   const [loggedIn, setLoggedIn] = React.useState(false);
@@ -87,7 +87,7 @@ function App() {
 
   //Открытие Попапа подтверждения регистрации
   function handleRegisterOpen() {
-    setisInfoTooltipOpen(true)
+    setIsInfoTooltipOpen(true)
   }
 
   //Закрытие попапов
@@ -99,7 +99,7 @@ function App() {
       isOpen: false,
       card: ''
     });
-    setisInfoTooltipOpen(false);
+    setIsInfoTooltipOpen(false);
   }
 
   //Закрытие попапов на ESC
@@ -217,11 +217,11 @@ function App() {
         if(res.data.email === email) {
         setIsSuccess(true);
         history.push('/sign-in')
-        closeAllPopups()
       }
       })
-      .catch(() => {
+      .catch((err) => {
         setIsSuccess(false);
+        console.log(err);
       })
   }
 
@@ -245,8 +245,9 @@ function App() {
           history.push('/');
         };
       })
-      .catch(() => {
+      .catch((err) => {
         setIsSuccess(false);
+        console.log(err);
       })
   }
 
