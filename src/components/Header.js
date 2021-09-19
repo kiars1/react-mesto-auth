@@ -11,7 +11,7 @@ function Header(props) {
 
   return (
     <header className="header">
-      <img src={headerLogo} className="header__logo" alt="Проект 'Место'" onClick={onSignOut} />
+      <img src={headerLogo} className="header__logo" alt="Проект 'Место'"/>
       <Route path="/sign-in">
         <Link className="header__link" to="/sign-up">
           Регистрация
@@ -28,7 +28,7 @@ function Header(props) {
       <Route exact path="/">
         <ul className="header__menu">
           <li><p className="header__link">{userEmail}</p></li>
-          <Link className="header__link" to="/sign-in">
+          <Link className="header__link" to="/sign-in" onClick={onSignOut}>
             <li>Выход</li>
           </Link>
         </ul>

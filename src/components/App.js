@@ -239,7 +239,6 @@ function App() {
           setUserEmail(email)
           setIsSuccess(true)
           setLoggedIn(true)
-          history.push('/');
         };
       })
       .catch((err) => {
