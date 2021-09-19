@@ -37,16 +37,13 @@ function App() {
 
    // Проверяем токен
   React.useEffect(() => {
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem('jwt')) {
       Auth.getContent(localStorage.token)
-        .then((data) => {
-          setUserEmail(data.data.email);
+        .then((res) => {
+          setUserEmail(res.data.email);
           setLoggedIn(true);
-
+          history.push("/");
         })
-        .catch((err) => {
-          console.log(err);
-        });
     }
   }, [history]);
 
@@ -238,10 +235,10 @@ function App() {
       .authorize(password, email)
       .then(res => {
         if (res.token) {
+          localStorage.setItem('jwt', res.token)
           setUserEmail(email)
           setIsSuccess(true)
           setLoggedIn(true)
-          localStorage.setItem('jwt', res.token)
           history.push('/');
         };
       })
