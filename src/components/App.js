@@ -37,15 +37,19 @@ function App() {
 
    // Проверяем токен
   React.useEffect(() => {
-    if (localStorage.getItem('jwt')) {
+    if (localStorage.getItem("token")) {
       Auth.getContent(localStorage.token)
-        .then((res) => {
-          setUserEmail(res.data.email);
+        .then((data) => {
+          setUserEmail(data.data.email);
           setLoggedIn(true);
           history.push("/");
         })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   }, [history]);
+
 
   //Получаем данные пользователя
   React.useEffect(() => {
@@ -224,7 +228,7 @@ function App() {
 
   // Выход из системы
   const handleSignOut = () => {
-    localStorage.removeItem('jwt');
+    localStorage.removeItem("token");
     setLoggedIn(false);
     history.push('/sign-in');
   }
@@ -233,9 +237,9 @@ function App() {
   function handleAuthorizeUser(password, email) {
     Auth
       .authorize(password, email)
-      .then(res => {
-        if (res.token) {
-          localStorage.setItem('jwt', res.token)
+      .then(data => {
+        if (data.token) {
+          localStorage.setItem("token", data.token);
           setUserEmail(email)
           setIsSuccess(true)
           setLoggedIn(true)
