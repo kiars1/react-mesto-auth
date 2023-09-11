@@ -17,13 +17,6 @@
 5. Popup окна на JS
 6. Валидация форм
 
-## Ссылка на проект
-
-   [Страница Mesto Project](https://kiars1.github.io/react-mesto-auth)
-   
-   <img src="./src/images/album.png" max-width="1000" title="Pascal Vent">
-
-
 ## Демонстрация
 
   При первом запуске сайта вас будет ждать окно регистрации.
@@ -38,3 +31,9 @@
   > <img src="./src/images/demo3.png" max-width="300" title="Pascal Vent">
 
   Ни о какой защищенности и супер функционале речи не идет. Цель данной работы была научиться работать с React и взаимодействовать в back-end сервером хоть и в такой своеобразной форме.
+
+## Ссылка на проект
+
+   [Страница Mesto Project](https://kiars1.github.io/react-mesto-auth)
+   
+   <img src="./src/images/album.png" max-width="1000" title="Pascal Vent">
