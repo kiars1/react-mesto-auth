@@ -28,13 +28,13 @@
 
   При первом запуске сайта вас будет ждать окно регистрации.
 
-  > <img src="./images/demo1.png" max-width="300" title="Pascal Vent">
+  > <img src="./src/images/demo1.png" max-width="300" title="Pascal Vent">
 
   После регистрации вы получаете доступ к сайту где можете взаимодействовать с его элементами.
-  > <img src="./images/demo2.png" max-width="300" title="Pascal Vent">
+  > <img src="./src/images/demo2.png" max-width="300" title="Pascal Vent">
 
   Добавление картинок возможно только в форме ссылки.
 
-  > <img src="./images/demo3.png" max-width="300" title="Pascal Vent">
+  > <img src="./src/images/demo3.png" max-width="300" title="Pascal Vent">
 
   Ни о какой защищенности и супер функционале речи не идет. Цель данной работы была научиться работать с React и взаимодействовать в back-end сервером хоть и в такой своеобразной форме.
